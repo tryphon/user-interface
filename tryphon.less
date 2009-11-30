@@ -434,12 +434,6 @@ p#cloud { margin-bottom: 8px; }
 * html #users { height: 1%; }
 * html #members { height: 1%; }
 * html #search { height: 1%; }
-.textile_editor_help {
-  padding: 4px 0 10px 10px;
-  font-size: 0.9em;
-  font-style: italic;
-}
-#selection li { display: inline; }
 
 form { 
     margin: 12px; 
@@ -447,8 +441,15 @@ form {
     /* #content p define left/right margins */
     p { margin: 5px 0 !important; }
 
+    /* TODO textarea and toolbar widths doesn't match existly */
     .textile-toolbar, textarea.textile { 
         width: 100%; 
+    }
+
+    .textile_editor_help {
+        padding: 4px 0 10px 10px;
+        font-size: 0.9em;
+        font-style: italic;
     }
 }
 
