@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <title>Application - Title of the page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/textile-editor.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <ul id="access">
+      <li><a href="#content">Aller au contenu</a></li>
+      <li><a href="#sidebar">Aller au menu</a></li>
+    </ul>
+    <hr/>
+    <div id="header">
+      <div>
+        <h1>Application</h1>
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr/>
+    <div id="frame">
+      <div id="wrap">
+
+        <div id="messages">
+          <div id="flash">Notice message</div>
+          <div id="flash" class="success">Success message</div>
+          <div id="flash" class="warning">Warning message</div>
+          <div id="flash" class="failure">Failure message</div>
+        </div>
+
+        <div id="content">
+          <h2>Title of the page</h2>
+
+          <p>
+            Nulla facilisi. Nunc rutrum vehicula lectus at lacinia. Sed dignissim urna nisl. Donec in dolor a nunc imperdiet dapibus. In vitae neque quis ligula adipiscing mattis. Fusce tincidunt erat vel metus cursus ultrices.
+          </p>
+
+          <h3>List</h3>
+
+          <p>
+            Donec ipsum nisl, adipiscing eget egestas posuere, luctus eget lacus! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+          </p>
+
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+
+          <div class="pagination">
+            <span class="disabled prev_page">« Précédent</span>
+            <span class="current">1</span>
+            <a rel="next" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a class="next_page" rel="next" href="#">Suivant »</a>
+          </div>
+
+          <div class="actions">
+            <a href="#" class="create">Ajouter</a>
+          </div>
+
+          <h3>Form</h3>
+
+          <h2>3 erreurs ont été trouvées</h2>
+          <ul>
+            <li><a href="#">Pas de lien défini</a></li>
+            <li><a href="#">Pas de titre défini</a></li>
+            <li><a href="#">Le titre est trop court (minimum 3 caractères)</a></li>
+          </ul>
+
+          <h2>Form Title</h2>
+          <form action="#" method="post">
+            <p>
+              <label for="field1">Field 1 :</label><br/>
+              <input name="field1" type="text" />
+            </p>
+
+            <p>
+              <label for="field2">Field 2 :</label><br/>
+              <input name="field2" type="text" />
+            </p>
+
+            <label for="episode_description">Textile text :</label>
+            <div class="textile-toolbar">
+              <button><img src="images/textile-editor/bold.png"/></button>
+              <button><img src="images/textile-editor/italic.png"/></button>
+              <button><img src="images/textile-editor/underline.png"/></button>
+              <button><img src="images/textile-editor/strikethrough.png"/></button>
+              <button><img src="images/textile-editor/list_numbers.png"/></button>
+              <button><img src="images/textile-editor/list_bullets.png"/></button>
+              <button><img src="images/textile-editor/paragraph.png"/></button>
+              <button><img src="images/textile-editor/h1.png"/></button>
+              <button><img src="images/textile-editor/h2.png"/></button>
+              <button><img src="images/textile-editor/h3.png"/></button>
+              <button><img src="images/textile-editor/h4.png"/></button>
+              <button><img src="images/textile-editor/blockquote.png"/></button>
+              <button><img src="images/textile-editor/left.png"/></button>
+              <button><img src="images/textile-editor/center.png"/></button>
+              <button><img src="images/textile-editor/right.png"/></button>
+              <button><img src="images/textile-editor/justify.png"/></button>
+            </div>
+            <textarea class="textile" rows="10"></textarea>
+
+            <p>
+              <input name="commit" type="submit" value="Modifier" />
+              ou
+              <a href="#">annuler &#8250;</a>
+            </p>
+          </form>
+
+
+          <h3>Tags</h3>
+
+          <p>
+            Donec ipsum nisl, adipiscing eget egestas posuere, luctus eget lacus! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+          </p>
+
+          <div class="tags">
+            Etiquettes : tag1, tag2, long tag3, tag4
+          </div>
+
+          <h3>Actions</h3>
+
+          <p>
+            Vestibulum pulvinar condimentum velit iaculis iaculis. Donec euismod commodo dictum! Ut et ligula ligula. 
+          </p>
+
+          <div class="actions">
+            <a href="#" class="create">Ajouter</a>
+            <a href="#" class="edit">Modifier</a>
+            <a href="#" class="view">Voir</a>
+            <a href="#" class="download">Télécharger</a>
+            <a href="#" class="upload">Déposer</a>
+            <a href="#" class="destroy">Supprimer</a>
+          </div>
+
+          <p>
+            Yet another set of actions :
+          </p>
+
+          <div class="actions">
+            <a href="#" class="listen">Ecouter</a>
+            <a href="#" class="share">Partager</a>
+            <a href="#" class="note">Note</a>
+            <a href="#" class="signup">Créer votre compte</a>
+          </div>
+
+          <h3>Items</h3>
+
+          <ul>
+            <li>
+              <h4><a href="#">Name</a></h4>
+              <p> Description </p>
+              <div class="details">
+                Details
+              </div>
+              <p class="dates">annotations</p>
+              <div class="tags">
+                Etiquettes : tag1, tag2, long tag3, tag4
+              </div>
+              <div class="actions">
+                <a href="#">Action 1</a>
+                <a class="destroy" href="#">Supprimer</a>
+              </div>
+            </li>
+
+            <li>
+              <h4><a href="#">Next One</a></h4>
+              <p> Description </p>
+              <div class="details">
+                Details
+              </div>
+              <p class="dates">annotations</p>
+              <div class="tags">
+                Etiquettes : tag1, tag2, long tag3, tag4
+              </div>
+              <div class="actions">
+                <a href="#">Action 1</a>
+                <a class="destroy" href="#">Supprimer</a>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+        <hr/>
+        <div id="sidebar">
+          <h2>Application<sup>beta</sup></h2>
+
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="footer">
+      <div>
+        &nbsp;
+      </div>
+    </div>
+  </body>
+</html>
