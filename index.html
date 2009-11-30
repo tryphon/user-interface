@@ -92,6 +92,11 @@
               <input name="field2" type="text" />
             </p>
 
+            <p>
+              <label>OpenId :</label><br/>
+              <input class="openid" name="openid" type="text"/>
+            </p>
+
             <label for="episode_description">Textile text :</label>
             <div class="textile-toolbar">
               <button><img src="images/textile-editor/bold.png"/></button>
@@ -115,10 +120,24 @@
             <div class="textile_editor_help">Ajouter un lien: "Bonnes Ondes":http://bonnes-ondes.fr</div>
 
             <p>
-              <label>OpenId :</label><br/>
-              <input class="openid" name="openid" type="text"/>
+              <label for="date">Date de diffusion :</label>
+              <br/>
+              <select name="date(3i)">
+                <option value="1">1</option>
+              </select>
+              <select name="date(2i)">
+                <option value="1">Janvier</option>
+              </select>
+              <select name="date(1i)">
+                <option value="2004">2009</option>
+              </select>
+              — <select name="date(4i)">
+                <option value="10">10</option>
+              </select>
+              : <select name="date(5i)">
+                <option value="30">30</option>
+              </select>
             </p>
-
             <p>
               <input name="commit" type="submit" value="Modifier" />
               ou
