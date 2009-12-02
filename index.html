@@ -36,13 +36,15 @@
         </div>
 
         <div id="content">
-          <h2>Title of the page</h2>
+          <h1>Title of the page</h1>
+          <h2>Subtitle in the page</h2>
+          <h3>Section</h3>
 
           <p>
             Nulla facilisi. Nunc rutrum vehicula lectus at lacinia. Sed dignissim urna nisl. Donec in dolor a nunc imperdiet dapibus. In vitae neque quis ligula adipiscing mattis. Fusce tincidunt erat vel metus cursus ultrices.
           </p>
 
-          <h3>List</h3>
+          <h2>List</h2>
 
           <p>
             Donec ipsum nisl, adipiscing eget egestas posuere, luctus eget lacus! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
@@ -67,11 +69,11 @@
             <a class="next_page" rel="next" href="#">Suivant »</a>
           </div>
 
+          <p class="empty">Vous n'avez pas encore ajouté de foos</p>
+
           <div class="actions">
             <a href="#" class="create">Ajouter</a>
           </div>
-
-          <h3>Form</h3>
 
           <h2>3 erreurs ont été trouvées</h2>
           <ul>
@@ -138,6 +140,19 @@
                 <option value="30">30</option>
               </select>
             </p>
+
+            <p>
+              <label for="tags">Etiquettes :</label>
+              <br/>
+              <input type="text" value="tag1 tag2 long-tag3" name="tags"/>
+              <span id="labels_auto_complete" style="display: block; width: 165px;">
+                <ul class="auto_complete">
+                  <li class="selected">logiciel-libre</li>
+                  <li>another</li>
+                </ul>
+              </span>
+            </p>
+
             <p>
               <input name="commit" type="submit" value="Modifier" />
               ou
@@ -145,7 +160,7 @@
             </p>
           </form>
 
-          <h3>Tags</h3>
+          <h2>Tags</h2>
 
           <p>
             Donec ipsum nisl, adipiscing eget egestas posuere, luctus eget lacus! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
@@ -155,7 +170,7 @@
             Etiquettes : tag1, tag2, long tag3, tag4
           </div>
 
-          <h3>Actions</h3>
+          <h2>Actions</h2>
 
           <p>
             Vestibulum pulvinar condimentum velit iaculis iaculis. Donec euismod commodo dictum! Ut et ligula ligula. 
@@ -181,7 +196,7 @@
             <a href="#" class="signup">Créer votre compte</a>
           </div>
 
-          <h3>Items</h3>
+          <h2>Items</h2>
 
           <ul>
             <li>
@@ -217,7 +232,17 @@
             </li>
           </ul>
 
+          <h2>Cloud</h2>
 
+          <p id="cloud">
+            <a class="rel-tag" rel="tag" href="#">esperanzah09</a>
+            <a class="rel-tag" rel="tag" href="#">podcast</a>
+            <a class="rel-tag" rel="tag" href="#">cinema</a>
+            <a class="rel-tag" rel="tag" href="#">quentin-dujardin</a>
+            <a class="rel-tag" rel="tag" href="#">thématique</a>
+            <a class="rel-tag" rel="tag" href="#">vêtements-propres</a>
+            <a class="rel-tag" rel="tag" href="#">travail_décent</a>
+          </p>
         </div>
         <hr/>
         <div id="sidebar">
@@ -227,6 +252,17 @@
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
           </ul>
+
+          <h2>Recherchez</h2>
+          <form id="search" method="post" action="#">
+            <input id="keywords" type="text" name="keywords"/>
+            <input class="image" type="image" src="images/search.png"/>
+          </form>
+
+          <h2>Information</h2>
+          <p>
+            Small text with a <a href="">link</a>. Et malesuada fames ac turpis egestas. 
+          </p>
         </div>
       </div>
     </div>
