@@ -95,6 +95,7 @@ img {
   padding: 4px 0;
   font-size: 90%;
   text-align: right;
+  border-top: 1px solid #cccccc;
 }
 .pagination {
   clear: both;
@@ -106,18 +107,11 @@ img {
   border-top: 1px solid #cccccc;
   margin: 0 0 6px;
 }
-#frame .tags {
-  border-top: 1px solid #cccccc;
-  margin: 0 0 6px;
-}
 #frame .details {
   position: absolute;
-  top: 10px;
-  right: 0;
   font-size: 90%;
 }
 #frame .tags {
-  margin: 6px 0 0;
   padding: 6px 20px;
   text-align: left;
   background: url("../images/tags.png") no-repeat 0px 6px;
@@ -174,16 +168,13 @@ img {
   color: #a559e4;
   margin: 6px 0;
   font-weight: bold;
-  font-size: 110%;
 }
 #content h3 a {
   text-decoration: none;
   color: #a559e4;
   margin: 6px 0;
   font-weight: bold;
-  font-size: 110%;
 }
-#content h4 { color: #5884a6; }
 #content p { margin: 0 0 0 6px; }
 #content li {
   position: relative;
@@ -203,18 +194,27 @@ img {
   text-decoration: none;
   background: #efefef;
 }
-#content .description p { margin: 6px; }
-#content .description li { margin: 6px; }
+#content .description { margin: 6px; }
+#content .description p { margin: 6px 0; }
+#content .description li { margin: 6px 0; }
 #content .description img {
   float: right;
   margin: 0 3px 10px 3px;
 }
 #content .description ul li { list-style: circle inside; }
 #content .description li { padding: 0 0 0 2px; }
-#content p.dates {
+#content .description:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#content .annotations {
   text-align: right;
   color: #999999;
   font-size: 0.8em;
+  padding-top: 0.2em;
 }
 #content p.empty {
   margin-top: 10px;
