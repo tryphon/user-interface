@@ -19,45 +19,44 @@ img {
   vertical-align: middle;
 }
 .hide, #access { display: none; }
+
 #header {
   border-bottom: 4px solid #cccccc;
   background: #333333;
+
+  div {
+      position: relative;
+      height: 100px;
+      width: 750px;
+      margin: 0 auto;
+      background: url("../images/bonnes-ondes.png") no-repeat 0px 30px;
+  }
+  h1 { 
+      text-indent: -999px;
+  }
 }
-#header div {
-  position: relative;
-  height: 100px;
-  width: 750px;
-  margin: 0 auto;
-  background: url("../images/bonnes-ondes.png") no-repeat 0px 30px;
+
+#menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    li {
+        float: left;
+        margin: 0 0 0 8px;
+        background-color: #a559e4;
+        a {
+            display: block;
+            padding: 6px 10px;
+            font-size: 105%;
+            color: #ffffff;
+        }
+        a:hover {
+            color: #333333;
+            text-decoration: none;
+        }
+    }
 }
-#header h1 { display: none; }
-#header a {
-  font-size: 90%;
-  color: #ffffff;
-}
-#header div ul {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  font-size: 90%;
-  list-style: none;
-}
-#header ul li {
-  float: left;
-  margin: 0 0 0 8px;
-  padding: 0;
-  background-color: #a559e4;
-}
-#header ul li a {
-  float: left;
-  display: block;
-  padding: 6px 10px;
-  text-decoration: none;
-  color: #ffffff;
-  font: normal 115% "Trebuchet MS", sans-serif;
-}
-#header ul li a:hover { color: #333333; }
+
 #frame {
   margin: 0;
   padding: 18px 0;
