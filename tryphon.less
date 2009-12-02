@@ -222,37 +222,54 @@ img {
 #sidebar {
   float: left;
   width: 200px;
-  margin: 0 0 20px 0;
+  ul {
+      margin: 0 0 12px 22px;
+      padding: 0;
+  }
+  li {
+      margin: 3px 0;
+      padding: 6px 0 0 0;
+      font-size: 100%;
+      list-style-type: square;
+  }
+  li a { 
+      color: #000000; 
+  }
+  sup { 
+      font-size: 70%; 
+  }
+  p {
+      text-indent: 4px;
+      font-size: 90%;
+      margin: 4px 0;
+  }
+  form.search { 
+      margin: 0; 
+
+      input {
+          float: left;
+          padding: 0;
+          width: 170px;
+          display: inline;
+      }
+
+      input.image {
+          float: right;
+          width: 20px;
+          height: 20px;
+          border: none;
+          padding-top: 2px;
+      }
+  }
+  form.search:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
 }
-#sidebar ul {
-  margin: 0 0 12px 22px;
-  padding: 0;
-  list-style-type: square;
-}
-#sidebar li {
-  margin: 3px 0;
-  padding: 6px 0 0 0;
-  font-size: 100%;
-}
-#sidebar li a { color: #000000; }
-#sidebar sup { font-size: 70%; }
-#sidebar p {
-  text-indent: 4px;
-  font-size: 90%;
-  margin: 4px;
-}
-#search { margin: 0.2em 0 1em; }
-#search input {
-  float: left;
-  padding: 0;
-  width: 174px;
-}
-#search input.image {
-  float: right;
-  width: 20px;
-  height: 20px;
-  border: none;
-}
+
 #messages {
   padding: 0 0 12px;
   background: #ffffff;
