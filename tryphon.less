@@ -161,63 +161,64 @@ img {
 #content {
   float: right;
   width: 520px;
-}
-#content h3 {
-  text-decoration: none;
-  color: #a559e4;
-  margin: 6px 0;
-  font-weight: bold;
-}
-#content h3 a {
-  text-decoration: none;
-  color: #a559e4;
-  margin: 6px 0;
-  font-weight: bold;
-}
-#content p { margin: 0 0 0 6px; }
-#content li {
-  position: relative;
-  margin: 0 12px 8px;
-  padding: 8px 0 0;
-}
-#content li p { margin: 0; }
-#content a.rel-tag {
-  line-height: 2em;
-  margin: 0 2px 0 0;
-  padding: 3px 5px;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  background: #f2f2f2;
-}
-#content a:hover.rel-tag {
-  text-decoration: none;
-  background: #efefef;
-}
-#content .description { margin: 6px; }
-#content .description p { margin: 6px 0; }
-#content .description li { margin: 6px 0; }
-#content .description img {
-  float: right;
-  margin: 0 3px 10px 3px;
-}
-#content .description ul li { list-style: circle inside; }
-#content .description li { padding: 0 0 0 2px; }
-#content .description:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#content .annotations {
-  text-align: right;
-  color: #999999;
-  font-size: 0.8em;
-  padding-top: 0.2em;
-}
-#content p.empty {
-  margin-top: 10px;
-  font-style: italic;
+
+  h3 {
+      color: #a559e4;
+      margin: 6px 0;
+      font-weight: bold;
+  }
+  h3 a {
+      color: #a559e4;
+  }
+  p { 
+      margin: 0 0 0 6px; 
+  }
+  li {
+      margin: 0 12px 8px;
+      padding: 8px 0 0;
+  }
+  a.rel-tag {
+      line-height: 2em;
+      margin: 0 2px 0 0;
+      padding: 3px 5px;
+      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      background: #f2f2f2;
+  }
+  a:hover.rel-tag {
+      text-decoration: none;
+      background: #efefef;
+  }
+  .description { 
+      margin: 6px; 
+      p { margin: 6px 0; }
+      img {
+          float: right;
+          margin: 0 3px 10px 3px;
+      }
+      li { 
+          list-style: circle inside; 
+          padding: 0 0 0 2px; 
+          margin: 6px 0; 
+      }
+  }
+  .description:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+  .annotations {
+      text-align: right;
+      color: #999999;
+      font-size: 0.8em;
+      padding-top: 0.2em;
+  }
+  .empty {
+      margin-top: 10px;
+      font-style: italic;
+  }
 }
 #sidebar {
   float: left;
