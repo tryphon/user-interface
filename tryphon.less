@@ -4,7 +4,6 @@ body {
   font-size: 14px;
   font-family: Trebuchet MS, Verdana, sans-serif;
 }
-ul { list-style-type: square; }
 a {
   color: #5884a6;
   text-decoration: none;
@@ -61,102 +60,30 @@ img {
 #frame {
   width: 750px;
   margin: 0 auto;
-  background-color: #ffffff;
+
+  h1, h2 {
+      font-family: "Georgia", serif;
+  }
+
+  /* used both in content and sidebar */
+  h2 {
+      font-size: 120%;
+      margin: 6px 0;
+      color: #7dacd1;
+      clear: both;
+      border-bottom: 1px solid #7dacd1;
+  }
 }
-#frame ul {
-  margin: 4px 0;
-  list-style-type: none;
-}
-#frame h1 {
-  font: normal 145% "Georgia", serif;
-  color: #A559E4;
-  margin: 6px 0;
-}
-#frame h2 {
-  font: normal 120% "Georgia", serif;
-  margin: 6px 0;
-  color: #7dacd1;
-  clear: both;
-  border-bottom: 1px solid #7dacd1;
-}
-#frame .actions {
-  clear: both;
-  padding: 4px 0;
-  font-size: 90%;
-  text-align: right;
-}
-#frame .tags {
-  clear: both;
-  padding: 4px 0;
-  font-size: 90%;
-  text-align: right;
-  border-top: 1px solid #cccccc;
-}
-.pagination {
-  clear: both;
-  padding: 4px 0;
-  font-size: 90%;
-  text-align: right;
-}
-#frame .actions {
-  border-top: 1px solid #cccccc;
-  margin: 0 0 6px;
-}
-#frame .details {
-  position: absolute;
-  font-size: 90%;
-}
-#frame .tags {
-  padding: 6px 20px;
-  text-align: left;
-  background: url("../images/tags.png") no-repeat 0px 6px;
-}
-#frame .details span {
-  margin: 0;
-  padding: 0 4px 0 20px;
-}
-#frame .actions span {
-  margin: 0;
-  padding: 0 4px 0 20px;
-}
-#frame .icon {
-  margin: 0;
-  padding: 0 4px 0 20px;
-}
-#frame .actions a {
-  color: #000000;
-  padding: 2px 2px 2px 20px;
-  margin-left: 6px;
-}
-#frame .details a {
-  color: #000000;
-  padding: 2px 2px 2px 20px;
-  margin-left: 6px;
-}
-#frame .create { background: url("../images/add.png") no-repeat; }
-#frame .edit { background: url("../images/edit.png") no-repeat; }
-#frame .share { background: url("../images/share.png") no-repeat; }
-#frame .destroy { background: url("../images/destroy.png") no-repeat; }
-#frame .upload { background: url("../images/upload.png") no-repeat; }
-#frame .download { background: url("../images/download.png") no-repeat; }
-#frame .listen { background: url("../images/listen.png") no-repeat; }
-#frame .view { background: url("../images/view.png") no-repeat; }
-#frame .note { background: url("../images/note.png") no-repeat; }
-#frame .signup { background: url("../images/author.png") no-repeat; }
-#frame .next { background: url("../images/next.png") no-repeat; }
-#frame .previous { background: url("../images/previous.png") no-repeat; }
-#frame .warning { background: url("../images/warning.png") no-repeat; }
-#frame .unavailable { background: url("../images/unavailable.png") no-repeat; }
-#frame .length { background: url("../images/length.png") no-repeat; }
-#frame .size { background: url("../images/size.png") no-repeat; }
-#frame .author {
-  float: left;
-  background: url("../images/author.png") no-repeat;
-}
+
 #content {
   float: right;
   width: 520px;
 
+  h1 {
+      font-size: 145%;
+      color: #A559E4;
+      margin: 6px 0;
+  }
   h3 {
       color: #a559e4;
       margin: 6px 0;
@@ -167,6 +94,14 @@ img {
   }
   p { 
       margin: 0 0 0 6px; 
+  }
+  p.note {
+      margin: 0;
+      padding: 0 4px 0 20px;
+      background: url("../images/note.png") no-repeat; 
+  }
+  ul {
+      margin: 4px 0;
   }
   li {
       margin: 0 12px 8px;
@@ -204,17 +139,82 @@ img {
       clear: both;
       visibility: hidden;
   }
+  .details {
+      position: absolute;
+      font-size: 90%;
+
+      span {
+          margin: 0;
+          padding: 0 4px 0 20px;
+      }
+
+      .length { background: url("../images/length.png") no-repeat; }
+      .size { background: url("../images/size.png") no-repeat; }
+      .author { background: url("../images/author.png") no-repeat; }
+  }
   .annotations {
       text-align: right;
       color: #999999;
       font-size: 0.8em;
       padding-top: 0.2em;
   }
+
   .empty {
       margin-top: 10px;
       font-style: italic;
   }
+  .pagination {
+      clear: both;
+      padding: 4px 0;
+      font-size: 90%;
+      text-align: right;
+
+      .next { background: url("../images/next.png") no-repeat; }
+      .previous { background: url("../images/previous.png") no-repeat; }
+  }
+  .actions {
+      border-top: 1px solid #cccccc;
+      margin: 0 0 6px;
+      clear: both;
+      padding: 4px 0;
+      font-size: 90%;
+      text-align: right;
+
+      a {
+          color: #000000;
+          padding: 2px 2px 2px 20px;
+          margin-left: 6px;
+      }
+
+      .create { background: url("../images/add.png") no-repeat; }
+      .edit { background: url("../images/edit.png") no-repeat; }
+      .share { background: url("../images/share.png") no-repeat; }
+      .destroy { background: url("../images/destroy.png") no-repeat; }
+      .upload { background: url("../images/upload.png") no-repeat; }
+      .download { background: url("../images/download.png") no-repeat; }
+      .listen { background: url("../images/listen.png") no-repeat; }
+      .view { background: url("../images/view.png") no-repeat; }
+      .note { background: url("../images/note.png") no-repeat; }
+      .signup { background: url("../images/author.png") no-repeat; }
+      .unavailable { background: url("../images/unavailable.png") no-repeat; }
+
+      span {
+          margin: 0;
+          padding: 0 4px 0 20px;
+      }  
+  }
+
+  .tags {
+      clear: both;
+      padding: 4px 0;
+      font-size: 90%;
+      border-top: 1px solid #cccccc;
+      padding: 6px 20px;
+      text-align: left;
+      background: url("../images/tags.png") no-repeat 0px 6px;
+  }
 }
+
 #sidebar {
   float: left;
   width: 200px;
@@ -225,7 +225,6 @@ img {
   li {
       margin: 3px 0;
       padding: 6px 0 0 0;
-      font-size: 100%;
       list-style-type: square;
   }
   li a { 
