@@ -208,12 +208,20 @@ img {
       .note { background: url("../images/note.png") no-repeat; }
       .signup { background: url("../images/author.png") no-repeat; }
       .unavailable { background: url("../images/unavailable.png") no-repeat; }
-
-      span {
-          margin: 0;
-          padding: 0 4px 0 20px;
-      }  
   }
+
+  .errors {
+      margin: 0 12px 14px 12px;
+
+      li { 
+          margin: 3px 0; 
+          color: #ca4f35;
+
+          a {
+              color: #ca4f35;
+          }
+      }
+   }
 
   .tags {
       clear: both;
@@ -276,11 +284,6 @@ img {
   }
 }
 
-#messages {
-  padding: 0 0 12px;
-  background: #ffffff;
-}
-
 #flash {
   div {
       margin: 6px 0;
@@ -312,11 +315,6 @@ img {
   }
 }
 
-#errors ul {
-  margin: 0 12px 14px 14px;
-  list-style-type: square;
-}
-#errors li { margin: 6px; }
 p#cloud { margin-bottom: 8px; }
 ul.auto_complete {
     /* overrides #content ul settings */
@@ -372,6 +370,7 @@ form {
     }
 
     input, textarea {
+        border: 1px solid #cccccc;
         padding: 4px;
     }
 
@@ -379,6 +378,11 @@ form {
         padding-left: 24px;
         background: url("../images/openid.png") no-repeat 4px;
         width: 20em;
+    }
+
+    .field_with_errors input { 
+        border: 1px solid #ca4f35;
+        background: #ffbdbd;
     }
 }
 
