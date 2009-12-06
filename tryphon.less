@@ -180,8 +180,17 @@ img {
       font-size: 90%;
       text-align: right;
 
-      .next { background: url("../images/next.png") no-repeat; }
-      .previous { background: url("../images/previous.png") no-repeat; }
+      .next_page { 
+          padding-right: 20px;
+          background: url("../images/next.png") no-repeat 100% 0%; 
+      }
+      .prev_page { 
+          padding-left: 20px;
+          background: url("../images/previous.png") no-repeat; 
+      }
+      .disabled {
+          display: none;
+      }
   }
   .actions {
       border-top: 1px solid #cccccc;
