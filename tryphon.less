@@ -74,6 +74,13 @@ img {
       border-bottom: 1px solid #7dacd1;
   }
 }
+#frame:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 
 #content {
   float: right;
@@ -273,31 +280,38 @@ img {
   padding: 0 0 12px;
   background: #ffffff;
 }
+
 #flash {
-  margin: 6px 0;
-  padding: 12px 0;
-  font-size: 115%;
-  font-weight: bold;
-  text-indent: 54px;
-  border-top: 1px solid #979797;
-  border-bottom: 1px solid #979797;
-  background: #e7e7e7 url("../images/notice.png") no-repeat 28px;
+  div {
+      margin: 6px 0;
+      padding: 12px 0;
+      font-size: 115%;
+      font-weight: bold;
+      text-indent: 54px;
+
+      /* use notice style by default */
+      border-top: 1px solid #979797;
+      border-bottom: 1px solid #979797;
+      background: #e7e7e7 url("../images/notice.png") no-repeat 28px;
+  }
+
+  .success {
+      color: #1e7a1b;
+      border-color: #4bb426;
+      background: #b7e1af url("../images/success.png") no-repeat 28px;
+  }
+  .failure {
+      color: #c01100;
+      border-color: #ca4f35;
+      background: #ffbdbd url("../images/failure.png") no-repeat 28px;
+  }
+  .warning {
+      color: #c67109;
+      border-color: #c67109;
+      background: #f8e694 url("../images/warning.png") no-repeat 28px;
+  }
 }
-#messages .success {
-  color: #1e7a1b;
-  border-color: #4bb426;
-  background: #b7e1af url("../images/success.png") no-repeat 28px;
-}
-#messages .failure {
-  color: #c01100;
-  border-color: #ca4f35;
-  background: #ffbdbd url("../images/failure.png") no-repeat 28px;
-}
-#messages .warning {
-  color: #c67109;
-  border-color: #c67109;
-  background: #f8e694 url("../images/warning.png") no-repeat 28px;
-}
+
 #errors ul {
   margin: 0 12px 14px 14px;
   list-style-type: square;
@@ -338,13 +352,6 @@ ul.auto_complete {
   width: 760px;
   margin: 0 auto;
   text-align: left;
-}
-#frame:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
 }
 
 form { 
