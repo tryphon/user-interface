@@ -29,7 +29,7 @@ img {
       height: 100px;
       width: 750px;
       margin: 0 auto;
-      background: url("../images/bonnes-ondes.png") no-repeat 0px 30px;
+      background: @logo_url no-repeat 0px 30px;
   }
   h1 { 
       text-indent: -999px;
@@ -43,7 +43,7 @@ img {
     li {
         float: left;
         margin: 0 0 0 8px;
-        background-color: #a559e4;
+        background-color: @color;
         a {
             display: block;
             padding: 6px 10px;
@@ -88,16 +88,16 @@ img {
 
   h1 {
       font-size: 145%;
-      color: #A559E4;
+      color: @color;
       margin: 6px 0;
   }
   h3 {
-      color: #a559e4;
+      color: @color;
       margin: 6px 0;
       font-weight: bold;
   }
   h3 a {
-      color: #a559e4;
+      color: @color;
   }
   p { 
       margin: 0 0 0 6px; 
