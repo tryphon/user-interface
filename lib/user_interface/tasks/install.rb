@@ -9,11 +9,13 @@ module UserInterface::Tasks
       options.each { |k,v| send("#{k}=", v) }
       yield self if block_given?
 
-      desc "Install user_interface static files"
-      task(:install) do
-        cp_r plugin_file("images/ui"), "#{Rails.public_path}/images"
-        cp plugin_file("images/#{logo}.png"), "#{Rails.public_path}/images"
-        cp plugin_file("stylesheets/reset.css"), "public/stylesheets"
+      namespace :user_interface do
+        desc "Install user_interface static files"
+        task(:install) do
+          cp_r plugin_file("images/ui"), "#{Rails.public_path}/images"
+          cp plugin_file("images/#{logo}.png"), "#{Rails.public_path}/images"
+          cp plugin_file("stylesheets/reset.css"), "public/stylesheets"
+        end
       end
     end
 

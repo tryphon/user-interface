@@ -14,15 +14,17 @@ module UserInterface::Tasks
       options.each { |k,v| send("#{k}=", v) }
       yield self if block_given?
 
-      desc "Build tryphon.css from less definition"
-      task(name) do
-        Tempfile.open("tryphon-css") do |f|
-          f.puts "@color: #{color};"
-          f.puts "@logo_url: #{logo_url};"
-          f.puts IO.read(less_file)
-          f.close
-
-          sh "lessc #{f.path} #{stylesheet_file}"
+      namespace :user_interface do
+        desc "Build tryphon.css from less definition"
+        task(name) do
+          Tempfile.open("tryphon-css") do |f|
+            f.puts "@color: #{color};"
+            f.puts "@logo_url: #{logo_url};"
+            f.puts IO.read(less_file)
+            f.close
+            
+            sh "lessc #{f.path} #{stylesheet_file}"
+          end
         end
       end
     end
