@@ -1,46 +1,9 @@
-desc "Build tryphon.css from less definition"
-task :stylesheet do
-  options = []
-  options << "--watch" if ENV['WATCH']
-  sh "lessc #{options.join(' ')} tryphon.less stylesheets/tryphon.css"
-end 
-
-require 'tempfile'
-class RakeTask
-
-  attr_accessor :color
-  attr_accessor :logo
-
-  def initialize(name, options = {})
-    options = { 
-      :color => "#a559e4", 
-      :logo => 'bonnes-ondes'
-    }.update(options)
-
-    options.each { |k,v| send("#{k}=", v) }
-    yield self if block_given?
-
-    task(name) do
-      Tempfile.open("tryphon-css") do |f|
-        f.puts "@color: #{color};"
-        f.puts "@logo_url: #{logo_url};"
-        f.puts IO.read("tryphon.less")
-        f.close
-
-        sh "lessc #{f.path} stylesheets/tryphon.css"
-      end
-    end
-  end
-
-  def logo_url
-    "url(\"../images/#{logo}.png\")"
-  end
-
-end
-
-RakeTask.new :test #, :color => '#1273b4'
-
+$: << "#{File.dirname(__FILE__)}/lib"
 require 'rubygems'
+require 'user_interface/tasks'
+
+UserInterface::Tasks::Css.new :stylesheet, 
+  :color => ENV['COLOR'], :logo => ENV['LOGO'], :watch => ENV['WATCH']
 
 begin
   require 'deadweight'
@@ -63,3 +26,12 @@ namespace :gems do
 end
 
 task :default => :stylesheet
+
+require 'rake'
+require 'spec/rake/spectask'
+
+desc 'Run the specs'
+Spec::Rake::SpecTask.new(:spec) do |t|
+  t.spec_opts = ['--colour --format progress --loadby mtime --reverse']
+  t.spec_files = FileList['spec/**/*_spec.rb']
+end
