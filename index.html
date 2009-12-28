@@ -83,24 +83,28 @@
           <a href="#" class="create">Ajouter</a>
         </div>
 
-        <h2>3 erreurs ont été trouvées</h2>
-        <ul class="errors">
-          <li><a href="#">Pas de lien défini</a></li>
-          <li><a href="#">Pas de titre défini</a></li>
-          <li><a href="#">Le titre est trop court (minimum 3 caractères)</a></li>
-        </ul>
-
-        <h2>Form Title</h2>
         <form action="#" method="post">
+          <div id="errorExplanation" class="errorExplanation">
+            <h2>Impossible d'enregistrer Extrait: 1 erreur</h2>
+            <p>Veuillez vérifier les champs suivants :</p>
+            <ul>
+              <li>Horaire de fin avant l'heure de début</li>
+              <li>Horaire de début non renseigné</li>
+            </ul>
+          </div>
+
           <p>
             <label for="field1">Field 1 :</label><br/>
             <input name="field1" type="text" />
           </p>
 
           <p>
-            <label for="field2">Field 2 :</label><br/>
-            <div class="field_with_errors">
-            <input name="field2" type="text" />
+            <div class="fieldWithErrors">
+              <label for="field2">Field 2 :</label>
+            </div>
+            <br/>
+            <div class="fieldWithErrors">
+              <input name="field2" type="text" />
             </div>
           </p>
 
@@ -149,6 +153,30 @@
             : <select name="date(5i)">
               <option value="30">30</option>
             </select>
+          </p>
+
+          <p>
+            <div class="fieldWithErrors">
+              <label for="date">Date en erreur :</label>
+            </div>
+            <br/>
+            <div class="fieldWithErrors">
+              <select name="date(3i)">
+                <option value="1">1</option>
+              </select>
+              <select name="date(2i)">
+                <option value="1">Janvier</option>
+              </select>
+              <select name="date(1i)">
+                <option value="2004">2009</option>
+              </select>
+              — <select name="date(4i)">
+                <option value="10">10</option>
+              </select>
+              : <select name="date(5i)">
+                <option value="30">30</option>
+              </select>
+            </div>
           </p>
 
           <p>

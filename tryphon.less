@@ -219,18 +219,21 @@ img {
       .unavailable { background: url("../images/ui/unavailable.png") no-repeat; }
   }
 
-  .errors {
-      margin: 0 12px 14px 12px;
+  #errorExplanation {
+      ul {
+          margin: 0 12px 14px 12px;
 
-      li { 
-          margin: 3px 0; 
-          color: #ca4f35;
-
-          a {
+          li { 
+              margin: 3px 0; 
+              padding: 0;
               color: #ca4f35;
+              
+              a {
+                  color: #ca4f35;
+              }
           }
       }
-   }
+  }
 
   .tags {
       clear: both;
@@ -389,9 +392,15 @@ form {
         width: 20em;
     }
 
-    .field_with_errors input { 
-        border: 1px solid #ca4f35;
-        background: #ffbdbd;
+    .fieldWithErrors {
+        display: inline;
+        input { 
+            border: 1px solid #ca4f35;
+            background: #ffbdbd;
+        }
+        select {
+            color: #ca4f35;
+        }
     }
 }
 
