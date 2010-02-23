@@ -33,7 +33,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.478805"
      inkscape:cx="236.09745"
-     inkscape:cy="700.34341"
+     inkscape:cy="673.29454"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -175,6 +175,81 @@
          offset="1"
          style="stop-color:#0048ff;stop-opacity:0;" />
     </linearGradient>
+    <inkscape:perspective
+       id="perspective2899"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3648">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.38647474"
+         id="feGaussianBlur3650" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3652">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.38647474"
+         id="feGaussianBlur3654" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3186-3"
+       id="linearGradient3245-6"
+       gradientUnits="userSpaceOnUse"
+       x1="81.029434"
+       y1="152.70576"
+       x2="57.090992"
+       y2="127.78026" />
+    <linearGradient
+       id="linearGradient3186-3">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1;"
+         offset="0"
+         id="stop3188-8" />
+      <stop
+         style="stop-color:#d72700;stop-opacity:0;"
+         offset="1"
+         id="stop3190-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3170-1"
+       id="linearGradient3247-6"
+       gradientUnits="userSpaceOnUse"
+       x1="60.449749"
+       y1="131.2274"
+       x2="86.686287"
+       y2="159.51167" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3170-1">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3172-1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3174-5" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3198-9">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.475"
+         id="feGaussianBlur3200-8" />
+    </filter>
   </defs>
   <metadata
      id="metadata2420">
@@ -184,6 +259,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -322,6 +398,87 @@
            style="fill:none;stroke:#ffffff;stroke-width:4.56213522;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            d="m 68.564104,151.55864 19.63484,0"
            id="path3161" />
+      </g>
+    </g>
+    <rect
+       style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3253-4"
+       width="177.26984"
+       height="50.226452"
+       x="151.65738"
+       y="447.72253"
+       inkscape:export-filename="/home/alban/Projects/LinkControl/vendor/plugins/user_interface/images/linkbox.png"
+       inkscape:export-xdpi="71.662682"
+       inkscape:export-ydpi="71.662682" />
+    <path
+       style="fill:none;stroke:#717171;stroke-width:1.47724867px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 177.50925,486.86963 149.20211,0"
+       id="path3251-8"
+       inkscape:export-filename="/home/alban/Projects/LinkControl/vendor/plugins/user_interface/images/linkbox.png"
+       inkscape:export-xdpi="71.662682"
+       inkscape:export-ydpi="71.662682" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.49946976px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff6600;fill-opacity:1;stroke:none;font-family:Designer Block;-inkscape-font-specification:Designer Block"
+       x="206.85432"
+       y="482.74384"
+       id="text2383-1"
+       inkscape:export-filename="/home/alban/Projects/LinkControl/vendor/plugins/user_interface/images/linkbox.png"
+       inkscape:export-xdpi="71.662682"
+       inkscape:export-ydpi="71.662682"><tspan
+         sodipodi:role="line"
+         id="tspan2385-0"
+         x="206.85432"
+         y="482.74384"
+         style="font-size:26.59047508px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ff6600;fill-opacity:1;font-family:Arial Black;-inkscape-font-specification:'Arial Black, Bold'">LinkBox</tspan></text>
+    <path
+       transform="matrix(0.9796491,0,0,0.9796491,102.32118,327.00695)"
+       d="m 98,149.61218 a 21.25,21.25 0 1 1 -42.5,0 21.25,21.25 0 1 1 42.5,0 z"
+       sodipodi:ry="21.25"
+       sodipodi:rx="21.25"
+       sodipodi:cy="149.61218"
+       sodipodi:cx="76.75"
+       id="path3163-3"
+       style="fill:url(#linearGradient3245-6);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3247-6);stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3198-9)"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/alban/Projects/LinkControl/vendor/plugins/user_interface/images/linkbox.png"
+       inkscape:export-xdpi="71.662682"
+       inkscape:export-ydpi="71.662682" />
+    <g
+       id="g3624"
+       transform="matrix(0.9796491,0,0,0.9796491,96.29443,280.36255)"
+       inkscape:export-filename="/home/alban/Projects/LinkControl/vendor/plugins/user_interface/images/linkbox.png"
+       inkscape:export-xdpi="71.662682"
+       inkscape:export-ydpi="71.662682">
+      <g
+         id="g3614"
+         style="stroke:#ffffff;stroke-linecap:round;filter:url(#filter3648)"
+         transform="translate(-3.015873,0)">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:3.61904764;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 84.935162,194.32663 13.694289,0"
+           id="path2838"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:3.61904764;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 92.84858,187.14628 7.24699,7.247 -7.113707,7.11371"
+           id="path2840"
+           sodipodi:nodetypes="ccc" />
+      </g>
+      <g
+         transform="matrix(-1,0,0,1,168.81974,5.7978547)"
+         id="g3618"
+         style="stroke:#ffffff;stroke-linecap:round;filter:url(#filter3652)">
+        <path
+           id="path3620"
+           d="m 84.935162,194.32663 13.694289,0"
+           style="fill:none;stroke:#ffffff;stroke-width:3.61904764;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:nodetypes="cc" />
+        <path
+           sodipodi:nodetypes="ccc"
+           id="path3622"
+           d="m 92.84858,187.14628 7.24699,7.247 -7.113707,7.11371"
+           style="fill:none;stroke:#ffffff;stroke-width:3.61904764;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       </g>
     </g>
   </g>
