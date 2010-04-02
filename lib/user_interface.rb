@@ -7,7 +7,6 @@ end
 require 'user_interface/locale_management'
 require 'user_interface/helpers/flash_helper'
 require 'user_interface/helpers/title_helper'
-require 'user_interface/helpers/will_paginate_helper'
 
 if defined?(ActionView::Base)
   ActionView::Base.send :include, UserInterface::FlashHelper
@@ -15,6 +14,7 @@ if defined?(ActionView::Base)
 end
 
 if defined?(WillPaginate::ViewHelpers)
+  require 'user_interface/helpers/will_paginate_helper'
   ActionView::Base.send :include, UserInterface::WillPaginateHelper
 end
 
