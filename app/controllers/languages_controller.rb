@@ -12,6 +12,7 @@ class LanguagesController < ApplicationController
 
   def change_language
     user_session.language = params[:id]
+    logger.debug "Change session language to #{user_session.language}"
     redirect_to :back
   end
 

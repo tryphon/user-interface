@@ -19,7 +19,7 @@ describe UserInterface::UserSessionManagement do
     include UserInterface::UserSessionManagement
   end
 
-  let(:session) { mock "HttpSession", :[]= => nil }
+  let(:session) { mock "HttpSession", :[]= => nil, :[] => nil }
   let(:request) { mock "HttpRequest", :env => {} }
   let(:controller) { TestUserSessionManagement.new(session, request) }
 

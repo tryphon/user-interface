@@ -9,7 +9,10 @@ module UserInterface::LocaleManagement
   private
 
   def change_locale
-    user_session.language = params[:lang] if params[:lang]
+    if params[:lang]
+      logger.debug "Overrides session language with param lang : #{params[:lang]}"
+      user_session.language = params[:lang] 
+    end
     I18n.locale = user_session.language
   end
 

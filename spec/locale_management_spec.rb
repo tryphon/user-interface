@@ -23,6 +23,10 @@ describe UserInterface::LocaleManagement do
       {}
     end
 
+    def logger
+      Rails.logger
+    end
+
     include UserInterface::LocaleManagement
   end
 
