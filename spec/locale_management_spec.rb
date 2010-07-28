@@ -28,7 +28,7 @@ describe UserInterface::LocaleManagement do
   it "should change I18n.locale with params :lang" do
     @locale_management.stub!(:params).and_return(:lang => "fr")
     @locale_management.send(:change_locale)
-    I18n.locale.should == "fr"
+    I18n.locale.should == :fr
   end
 
 end
