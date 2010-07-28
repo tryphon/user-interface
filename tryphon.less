@@ -247,6 +247,19 @@ strong {
       text-align: left;
       background: url("../images/ui/tags.png") no-repeat 0px 6px;
   }
+
+  .inline_help {
+      padding-left: 20px;
+      font-size: 90%; 
+      font-style: italic;
+      background: url("../images/ui/help.png") no-repeat;    
+      margin-top: 20px;
+
+      p {
+          margin: 6px 0;
+      }
+  }
+
 }
 
 #sidebar {
@@ -271,6 +284,11 @@ strong {
       text-indent: 4px;
       font-size: 90%;
       margin: 4px 0;
+  }
+  p.languages {
+      margin: -5px 0 10px 0;
+      padding: 0px;
+      text-align: center;
   }
   form.search { 
       margin: 0; 
@@ -376,6 +394,11 @@ form {
     /* TODO textarea and toolbar widths doesn't match existly */
     .textile-toolbar, textarea.textile { 
         width: 100%; 
+    }
+
+    ul li {
+        padding: 0 !important; 
+        margin-left: 0 !important;
     }
 
     .textile_editor_help {
