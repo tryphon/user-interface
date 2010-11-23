@@ -10,11 +10,7 @@ module UserInterface
     protected
 
     def user_session(defaults = {})
-      @user_session ||= UserSession.new session, :language => default_language
-    end
-
-    def default_language
-      accepted_language or :fr
+      @user_session ||= UserSession.new session, :language => accepted_language
     end
 
     def accepted_language

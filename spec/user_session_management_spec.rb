@@ -37,7 +37,7 @@ describe UserInterface::UserSessionManagement do
     end
 
     it "should create a new UserSession with default language" do
-      controller.stub :default_language => "dummy"
+      controller.stub :accepted_language => "dummy"
       UserInterface::UserSession.should_receive(:new).with(session, hash_including(:language => "dummy")).and_return(user_interface)
       controller.send(:user_session)
     end
@@ -50,16 +50,24 @@ describe UserInterface::UserSessionManagement do
 
   end
 
-  describe "#default_language" do
-    
-    it "should be accepted_language when available" do
-      controller.stub :accepted_language => "dummy"
-      controller.send(:default_language).should == "dummy"
+  describe "#accepted_language" do
+
+    def request(env = {})
+      mock "request", :env => env
     end
 
-    it "should be :fr without accepted_language" do
-      controller.stub! :accepted_language
-      controller.send(:default_language).should == :fr
+    def accepted_language
+      controller.send(:accepted_language)
+    end
+    
+    it "should be used first http accepted language" do
+      controller.stub :request => request('HTTP_ACCEPT_LANGUAGE' => "dm en fr")
+      accepted_language.should == "dm"
+    end
+
+    it "should be nil without http accepted language" do
+      controller.stub :request => request
+      accepted_language.should be_nil
     end
 
   end
