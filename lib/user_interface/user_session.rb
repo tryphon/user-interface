@@ -1,5 +1,7 @@
 class UserInterface::UserSession
 
+  attr_reader :session
+
   def initialize(session, defaults = {})
     @session = session
     use_defaults(defaults)
@@ -24,11 +26,11 @@ class UserInterface::UserSession
   end
 
   def language
-    @language = @session[:language]
+    @language = session[:language]
   end
 
   def language=(language)
-    @session[:language] = supported_language(language.to_s)
+    session[:language] = supported_language(language.to_s)
   end
 
 end
