@@ -1,4 +1,5 @@
 class LanguagesController < ApplicationController
+  unloadable
 
   def show
     change_language
@@ -15,5 +16,4 @@ class LanguagesController < ApplicationController
     logger.debug "Change session language to #{user_session.language}"
     redirect_to :back
   end
-
 end
