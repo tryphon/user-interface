@@ -1,9 +1,8 @@
-# UserInterface
+require "user_interface/engine"
+
+require "user_interface/user_session"
+require "user_interface/user_session_management"
+require "user_interface/locale_management"
 
 module UserInterface
-  
 end
-
-require 'user_interface/locale_management'
-require 'user_interface/helpers/flash_helper'
-require 'user_interface/helpers/title_helper'

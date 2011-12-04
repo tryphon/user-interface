@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UserInterface::FlashHelper do
+describe FlashHelper do
 
   describe "flash_tag" do
     
@@ -9,15 +9,15 @@ describe UserInterface::FlashHelper do
     end
 
     it "should return a #flash div" do
-      helper.flash_tag(:level => "message").should have_tag("div[id=flash]")
+      helper.flash_tag(:level => "message").should have_selector(:flash)
     end
 
     it "should return a div for each flash entry (level, message)" do
-      helper.flash_tag(:level => "message").should have_tag("div[class=level]", "message")
+      helper.flash_tag(:level => "message").should have_selector("div", :class => "level", :content => "message")
     end
 
     it "should return a div for each flash entry (level, message)" do
-      helper.flash_tag(:level => "message").should have_tag("div[class=level]", "message")
+      helper.flash_tag(:level => "message").should have_selector("div", :class => "level", :content => "message")
     end
 
     it "should sanitize messages" do

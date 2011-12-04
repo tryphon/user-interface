@@ -6,6 +6,6 @@ module LanguagesHelper
   def links_to_languages
     [:en, :fr].collect do |language|
       link_to_language language
-    end.join(' ')
+    end.join(' ').html_safe
   end
 end

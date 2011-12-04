@@ -1,0 +1,14 @@
+en:
+  layouts:
+    application:
+      dashboard: Dashboard
+      help: Help
+      information: 
+        title: Information
+fr:
+  layouts:
+    application:
+      dashboard: Tableau de bord
+      help: Aide
+      information: 
+        title: Information
