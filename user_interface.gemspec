@@ -7,13 +7,13 @@ require "user_interface/version"
 Gem::Specification.new do |s|
   s.name        = "user_interface"
   s.version     = UserInterface::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of UserInterface."
-  s.description = "TODO: Description of UserInterface."
+  s.authors     = ["Alban Peignier", "Florent Peyraud"]
+  s.email       = ["alban@tryphon.eu", "florent@tryphon.eu"]
+  s.homepage    = "http://projects.tryphon.eu/user_interface"
+  s.summary     = "Tryphon UI resources"
+  s.description = "Rails engine used to share user interface resources between Tryphon web applications"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + %w{COPYING COPYRIGHT Rakefile}
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.1.3"
