@@ -13,7 +13,6 @@ class UserInterface::UserSession
     end
 
     unless used_defaults.empty?
-      Rails.logger.debug { "Use defaults for user session: #{used_defaults.inspect}" }
       used_defaults.each { |k,v| send("#{k}=", v) }
     end
   end
