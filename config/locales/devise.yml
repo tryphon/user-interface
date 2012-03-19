@@ -1,0 +1,34 @@
+fr:
+  activerecord:
+    attributes:
+      user:
+        password: Mot de passe
+  devise:
+    sessions: 
+      new:
+        title: Se connecter
+        submit: Se connecter
+    registrations:
+      new:
+        title: "S'inscrire"
+        submit: Créer un compte
+    passwords:
+      new:
+        title: Mot de passe oublié
+        submit: Envoyer les instructions pour un nouveau mot de passe
+      edit:
+        title: Changer de mot de passe
+        new_password: Nouveau mot de passe
+        new_password_confirmation: Confirmation du nouveau mot de passe
+        submit: Changer de mot de passe
+    links:
+      sign_in: "Se connecter"
+      sign_up: "S'inscrire"
+      new_password: Mot de passe oublié
+  helpers:
+    label:
+      user:
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi
+          
