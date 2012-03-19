@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + %w{COPYING COPYRIGHT Rakefile}
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.1.3"
+  s.add_dependency "rails", ">= 3.1.3"
   s.add_dependency "will_paginate", "~> 3.0.2"
   # s.add_dependency "jquery-rails"
 
