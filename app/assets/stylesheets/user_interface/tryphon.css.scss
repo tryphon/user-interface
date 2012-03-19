@@ -351,23 +351,23 @@ em {
       /* use notice style by default */
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
-      background: #e7e7e7 url("../images/ui/notice.png") no-repeat 28px;
+      background: #e7e7e7 image-url("ui/notice.png") no-repeat 28px;
   }
 
   .success {
       color: #1e7a1b;
       border-color: #4bb426;
-      background: #b7e1af url("../images/ui/success.png") no-repeat 28px;
+      background: #b7e1af image-url("ui/success.png") no-repeat 28px;
   }
   .failure {
       color: #c01100;
       border-color: #ca4f35;
-      background: #ffbdbd url("../images/ui/failure.png") no-repeat 28px;
+      background: #ffbdbd image-url("ui/failure.png") no-repeat 28px;
   }
   .warning {
       color: #c67109;
       border-color: #c67109;
-      background: #f8e694 url("../images/ui/warning.png") no-repeat 28px;
+      background: #f8e694 image-url("ui/warning.png") no-repeat 28px;
   }
 }
 
@@ -437,7 +437,7 @@ form {
 
     input.openid {
         padding-left: 24px;
-        background: url("../images/ui/openid.png") no-repeat 4px;
+        background: image-url("ui/openid.png") no-repeat 4px;
         width: 20em;
     }
 
