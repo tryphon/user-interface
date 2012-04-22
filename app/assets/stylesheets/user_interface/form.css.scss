@@ -1,0 +1,61 @@
+form { 
+    margin: 12px; 
+
+    /* #content p define left/right margins */
+    p { margin: 7px 0 !important; }
+
+    /* TODO textarea and toolbar widths doesn't match existly */
+    .textile-toolbar, textarea.textile { 
+        width: 100%; 
+    }
+
+    ul li {
+        padding: 0 !important; 
+        margin-left: 0 !important;
+    }
+
+    .textile_editor_help {
+        padding: 4px 0 10px 10px;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    input, textarea {
+        border: 1px solid #cccccc;
+        padding: 4px;
+    }
+
+    /* add some space for "special" inputs */
+    input[type=submit] {
+        margin-top: 12px;
+    }
+    input[type=checkbox] {
+        margin-top: 8px;
+    }
+
+    input.openid {
+        padding-left: 24px;
+        background: image-url("ui/openid.png") no-repeat 4px;
+        width: 20em;
+    }
+
+    .field_with_errors {
+        display: inline;
+        input { 
+            border: 1px solid #ca4f35;
+            background: #ffbdbd;
+        }
+        select {
+            color: #ca4f35;
+        }
+    }
+
+    label:after {
+        content: " :";
+    }
+    input[type=checkbox] + label:after {
+        content: none;
+    }
+
+}
+

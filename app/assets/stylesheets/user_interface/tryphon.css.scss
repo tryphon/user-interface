@@ -97,7 +97,7 @@ em {
   h1 {
       font-size: 145%;
       color: $color;
-      margin: 6px 0;
+      margin: 0 0 6px 0;
   }
   h3 {
       color: $color;
@@ -170,7 +170,7 @@ em {
   .details.in_actions {
       padding-top: 5px;
   }
-  padding-top:5px;
+
   .annotations {
       text-align: right;
       color: #999999;
@@ -340,37 +340,6 @@ em {
   }
 }
 
-#flash {
-  div {
-      margin: 6px 0;
-      padding: 12px 0;
-      font-size: 115%;
-      font-weight: bold;
-      text-indent: 54px;
-
-      /* use notice style by default */
-      border-top: 1px solid #979797;
-      border-bottom: 1px solid #979797;
-      background: #e7e7e7 image-url("ui/notice.png") no-repeat 28px;
-  }
-
-  .success {
-      color: #1e7a1b;
-      border-color: #4bb426;
-      background: #b7e1af image-url("ui/success.png") no-repeat 28px;
-  }
-  .failure {
-      color: #c01100;
-      border-color: #ca4f35;
-      background: #ffbdbd image-url("ui/failure.png") no-repeat 28px;
-  }
-  .warning {
-      color: #c67109;
-      border-color: #c67109;
-      background: #f8e694 image-url("ui/warning.png") no-repeat 28px;
-  }
-}
-
 p#cloud { margin-bottom: 8px; }
 ul.auto_complete {
     /* overrides #content ul settings */
@@ -406,50 +375,5 @@ ul.auto_complete {
   width: 760px;
   margin: 0 auto;
   text-align: left;
-}
-
-form { 
-    margin: 12px; 
-
-    /* #content p define left/right margins */
-    p { margin: 7px 0 !important; }
-
-    /* TODO textarea and toolbar widths doesn't match existly */
-    .textile-toolbar, textarea.textile { 
-        width: 100%; 
-    }
-
-    ul li {
-        padding: 0 !important; 
-        margin-left: 0 !important;
-    }
-
-    .textile_editor_help {
-        padding: 4px 0 10px 10px;
-        font-size: 0.9em;
-        font-style: italic;
-    }
-
-    input, textarea {
-        border: 1px solid #cccccc;
-        padding: 4px;
-    }
-
-    input.openid {
-        padding-left: 24px;
-        background: image-url("ui/openid.png") no-repeat 4px;
-        width: 20em;
-    }
-
-    .fieldWithErrors {
-        display: inline;
-        input { 
-            border: 1px solid #ca4f35;
-            background: #ffbdbd;
-        }
-        select {
-            color: #ca4f35;
-        }
-    }
 }
 
