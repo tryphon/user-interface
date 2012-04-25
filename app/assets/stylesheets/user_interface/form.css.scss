@@ -59,3 +59,14 @@ form {
 
 }
 
+form.simple_form {
+    div.input {
+        display: block;
+        label {
+            display: block;
+        }
+        span.error {
+            margin-left: 5px;
+        }
+    }
+}
