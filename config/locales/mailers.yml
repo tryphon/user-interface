@@ -1,0 +1,10 @@
+fr:
+  layouts:
+    mailer:
+      sent_by: Envoyé par
+      powered_by: Proposé par
+en:
+  layouts:
+    mailer:
+      sent_by: Sent by
+      powered_by: Powered by

@@ -50,6 +50,7 @@ fr:
       confirm: "Êtes-vous sûr ?"
       back: "Retour"
       signed_up_but_REASON: "Votre compte a été trouvé. Cependant, nous n'avons pas pu vous connecter car votre compte est %{reason}."
+      signed_up_but_unconfirmed: "Votre compte a été créé. Un email de confirmation vient de vous être envoyé"
       updated: 'Votre compte a été modifié avec succès.'
       destroyed: 'Votre compte a été supprimé avec succès. Nous espérons vous revoir bientôt.'
     unlocks:
