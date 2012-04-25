@@ -113,7 +113,7 @@ em {
   p.note {
       margin: 0;
       padding: 0 4px 0 20px;
-      background: url("../images/ui/note.png") no-repeat; 
+      background: image-url("ui/note.png") no-repeat; 
   }
   ul {
       margin: 4px 0;
@@ -163,9 +163,9 @@ em {
           padding: 0 4px 0 20px;
       }
 
-      .length { background: url("../images/ui/length.png") no-repeat; }
-      .size { background: url("../images/ui/size.png") no-repeat; }
-      .author { background: url("../images/ui/author.png") no-repeat; }
+      .length { background: image-url("ui/length.png") no-repeat; }
+      .size { background: image-url("ui/size.png") no-repeat; }
+      .author { background: image-url("ui/author.png") no-repeat; }
   }
   .details.in_actions {
       padding-top: 5px;
@@ -190,11 +190,11 @@ em {
 
       .next_page { 
           padding-right: 20px;
-          background: url("../images/ui/next.png") no-repeat 100% 0%; 
+          background: image-url("ui/next.png") no-repeat 100% 0%; 
       }
       .prev_page { 
           padding-left: 20px;
-          background: url("../images/ui/previous.png") no-repeat; 
+          background: image-url("ui/previous.png") no-repeat; 
       }
       .disabled {
           display: none;
@@ -214,17 +214,17 @@ em {
           margin-left: 6px;
       }
 
-      .create { background: url("../images/ui/add.png") no-repeat; }
-      .edit { background: url("../images/ui/edit.png") no-repeat; }
-      .share { background: url("../images/ui/share.png") no-repeat; }
-      .destroy { background: url("../images/ui/destroy.png") no-repeat; }
-      .upload { background: url("../images/ui/upload.png") no-repeat; }
-      .download { background: url("../images/ui/download.png") no-repeat; }
-      .listen { background: url("../images/ui/listen.png") no-repeat; }
-      .view { background: url("../images/ui/view.png") no-repeat; }
-      .note { background: url("../images/ui/note.png") no-repeat; }
-      .signup { background: url("../images/ui/author.png") no-repeat; }
-      .unavailable { background: url("../images/ui/unavailable.png") no-repeat; }
+      .create { background: image-url("ui/add.png") no-repeat; }
+      .edit { background: image-url("ui/edit.png") no-repeat; }
+      .share { background: image-url("ui/share.png") no-repeat; }
+      .destroy { background: image-url("ui/destroy.png") no-repeat; }
+      .upload { background: image-url("ui/upload.png") no-repeat; }
+      .download { background: image-url("ui/download.png") no-repeat; }
+      .listen { background: image-url("ui/listen.png") no-repeat; }
+      .view { background: image-url("ui/view.png") no-repeat; }
+      .note { background: image-url("ui/note.png") no-repeat; }
+      .signup { background: image-url("ui/author.png") no-repeat; }
+      .unavailable { background: image-url("ui/unavailable.png") no-repeat; }
   }
 
   #errorExplanation {
@@ -250,14 +250,14 @@ em {
       border-top: 1px solid #cccccc;
       padding: 6px 20px;
       text-align: left;
-      background: url("../images/ui/tags.png") no-repeat 0px 6px;
+      background: image-url("ui/tags.png") no-repeat 0px 6px;
   }
 
   .inline_help {
       padding-left: 20px;
       font-size: 90%; 
       font-style: italic;
-      background: url("../images/ui/help.png") no-repeat;    
+      background: image-url("ui/help.png") no-repeat;    
       margin-top: 20px;
 
       p {
