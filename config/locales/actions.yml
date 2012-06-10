@@ -1,6 +1,8 @@
 en:
   actions:
     listen: Listen
+    show: Show
 fr:
   actions:
     listen: Ecouter
+    show: Voir
