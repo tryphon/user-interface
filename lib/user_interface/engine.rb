@@ -8,8 +8,17 @@ module UserInterface
       ApplicationController.send :include, UserInterface::LocaleManagement
 
       # To use our devise views instead of original ones
-      ApplicationController.prepend_view_path File.expand_path("../../../app/views", __FILE__)
-      ActionMailer::Base.prepend_view_path File.expand_path("../../../app/views", __FILE__)
+
+      view_path = File.expand_path("../../../app/views", __FILE__)
+      
+      devise_position = ApplicationController.view_paths.map(&:to_s).index { |p| p.match /devise/ }
+      if devise_position
+        ApplicationController.view_paths.insert devise_position, view_path
+      else
+        ApplicationController.prepend_view_path view_path
+      end
+
+      ActionMailer::Base.prepend_view_path view_path
     end
   end
 end
