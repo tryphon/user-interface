@@ -1,16 +1,29 @@
-form { 
-    margin: 12px; 
+form {
+    margin: 12px;
 
     /* #content p define left/right margins */
-    p { margin: 7px 0 !important; }
+    p, div.input { margin: 7px 0 !important; }
 
     /* TODO textarea and toolbar widths doesn't match existly */
-    .textile-toolbar, textarea.textile { 
-        width: 100%; 
+    .textile-toolbar, textarea.textile, .textile textarea {
+        width: 100%;
+    }
+
+    .textile_toolbar {
+        background: #ece9d8;
+        padding: 3px;
+
+        small {
+            /* hide "Textile enabled" */
+            display: none;
+        }
+        img {
+            border: 1px solid #fff;
+        }
     }
 
     ul li {
-        padding: 0 !important; 
+        padding: 0 !important;
         margin-left: 0 !important;
     }
 
@@ -41,7 +54,7 @@ form {
 
     .field_with_errors {
         display: inline;
-        input { 
+        input {
             border: 1px solid #ca4f35;
             background: #ffbdbd;
         }
