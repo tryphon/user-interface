@@ -18,7 +18,7 @@ class UserInterface::UserSession
   end
 
   @@supported_languages = %w{en fr}
-  cattr_reader :supported_languages
+  cattr_accessor :supported_languages
 
   def supported_language(language)
     supported_languages.include?(language) ? language : I18n.default_locale.to_s

@@ -10,7 +10,7 @@ module UserInterface::LocaleManagement
 
   def change_locale
     if params[:lang]
-      user_session.language = params[:lang] 
+      user_session.language = params[:lang]
     end
     I18n.locale = user_session.language
   end
