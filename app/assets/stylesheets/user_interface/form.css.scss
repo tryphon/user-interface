@@ -66,8 +66,15 @@ form {
     label:after {
         content: " :";
     }
-    input[type=checkbox] + label:after {
+    input[type=checkbox] + label:after, label.checkbox:after {
         content: none;
+    }
+
+    .hint {
+        display: block;
+        font-size: 0.85em;
+        color: #aaa;
+        margin-bottom: 5px
     }
 
 }
