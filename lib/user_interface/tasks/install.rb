@@ -3,8 +3,10 @@ require 'tempfile'
 
 module UserInterface::Tasks
   class Install
+    include Rake::DSL
+
     attr_accessor :logo
-    
+
     def initialize(options = {})
       options.each { |k,v| send("#{k}=", v) }
       yield self if block_given?
@@ -22,7 +24,6 @@ module UserInterface::Tasks
     def plugin_file(name)
       "#{File.dirname(__FILE__)}/../../../#{name}"
     end
-    
+
   end
 end
-

@@ -3,14 +3,16 @@ require 'tempfile'
 
 module UserInterface::Tasks
   class Css
+    include Rake::DSL
+
     attr_accessor :color, :logo, :watch
-    
+
     def initialize(name = :stylesheet, options = {})
-      options = { 
+      options = {
         :color => "#a559e4",
         :logo => 'bonnes-ondes'
       }.update(options.delete_if { |k,v| v.nil? })
-      
+
       options.each { |k,v| send("#{k}=", v) }
       yield self if block_given?
 
@@ -22,13 +24,13 @@ module UserInterface::Tasks
             f.puts "@logo_url: #{logo_url};"
             f.puts IO.read(less_file)
             f.close
-            
+
             sh "lessc #{f.path} #{stylesheet_file}"
           end
         end
       end
     end
-    
+
     def logo_url
       "url(\"../images/#{logo}.png\")"
     end
@@ -48,7 +50,6 @@ module UserInterface::Tasks
         plugin_file "stylesheets/tryphon.css"
       end
     end
-    
+
   end
 end
-
