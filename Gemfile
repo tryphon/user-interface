@@ -18,4 +18,6 @@ gem "jquery-rails"
 
 group :development do
   gem 'guard'
+  gem 'guard-rspec'
+  gem 'simplecov'
 end
