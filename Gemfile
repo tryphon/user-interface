@@ -20,4 +20,5 @@ group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'simplecov'
+  gem 'simplecov-rcov'
 end
