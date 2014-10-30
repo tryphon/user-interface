@@ -14,7 +14,7 @@
    height="1052.3622047"
    id="svg2415"
    sodipodi:version="0.32"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="logos.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/alban/share/projects/tryphon.org/tryphon-application-css/stream.png"
@@ -31,17 +31,17 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.73940254"
-     inkscape:cx="30.058891"
-     inkscape:cy="392.3788"
+     inkscape:zoom="1.4788051"
+     inkscape:cx="508.09476"
+     inkscape:cy="929.97792"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="712"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
      inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
   <defs
      id="defs2417">
     <linearGradient
@@ -249,6 +249,35 @@
          inkscape:collect="always"
          stdDeviation="0.475"
          id="feGaussianBlur3200-8" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3443-6"
+       id="linearGradient3465-3"
+       x1="208.29459"
+       y1="330.62869"
+       x2="185.38423"
+       y2="194.97437"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3443-6">
+      <stop
+         style="stop-color:#7aa238;stop-opacity:1;"
+         offset="0"
+         id="stop3445-0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3447-0" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4251-8">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.49557388"
+         id="feGaussianBlur4253-1" />
     </filter>
   </defs>
   <metadata
@@ -589,5 +618,57 @@
        inkscape:export-filename="/home/alban/Projects/RivendellImport/lib/rivendell/import/static/rivendell-import.png"
        inkscape:export-xdpi="47.169998"
        inkscape:export-ydpi="47.169998" />
+    <rect
+       y="55.547749"
+       x="420.94189"
+       height="100.20827"
+       width="302.63251"
+       id="rect2425-29"
+       style="fill:#333333;fill-opacity:1;stroke:#ffffff;stroke-width:0.83020090999999996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path3293-1"
+       d="m 483.9409,109.40033 154.62189,0.003"
+       style="fill:#717171;fill-opacity:1;fill-rule:evenodd;stroke:#717171;stroke-width:0.83279949px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/alban/Projects/PlayControl/app/assets/images/logo.png"
+       inkscape:export-xdpi="72.325089"
+       inkscape:export-ydpi="72.325089" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3289-3"
+       y="105.14227"
+       x="517.77118"
+       style="font-size:9.51014900000000019px;font-style:normal;font-weight:normal;line-height:125%;fill:#7aa238;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/home/alban/Projects/PlayControl/app/assets/images/logo.png"
+       inkscape:export-xdpi="72.325089"
+       inkscape:export-ydpi="72.325089"><tspan
+         style="font-size:31.70049476999999882px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#7aa238;fill-opacity:1;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Semi-Bold"
+         y="105.14227"
+         x="517.77118"
+         id="tspan3291-6"
+         sodipodi:role="line">PlayBox</tspan></text>
+    <path
+       transform="matrix(0.53442156,0,0,0.53442156,375.62407,-65.611234)"
+       d="m 251.0473,303.13272 a 49.557388,49.557388 0 1 1 -99.11477,0 49.557388,49.557388 0 1 1 99.11477,0 z"
+       sodipodi:ry="49.557388"
+       sodipodi:rx="49.557388"
+       sodipodi:cy="303.13272"
+       sodipodi:cx="201.48991"
+       id="path3407-8"
+       style="fill:url(#linearGradient3465-3);fill-opacity:1;stroke:none;filter:url(#filter4251-8)"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/alban/Projects/PlayControl/app/assets/images/logo.png"
+       inkscape:export-xdpi="72.325089"
+       inkscape:export-ydpi="72.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.64733875px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 473.48878,82.330332 0,27.928708 25.97179,-14.994817 -25.97179,-12.933891 z"
+       id="path3441-7"
+       inkscape:export-filename="/home/alban/Projects/PlayControl/app/assets/images/logo.png"
+       inkscape:export-xdpi="72.325089"
+       inkscape:export-ydpi="72.325089" />
   </g>
 </svg>
