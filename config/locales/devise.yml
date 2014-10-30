@@ -1,0 +1,106 @@
+fr:
+  activerecord:
+    attributes:
+      user:
+        password: Mot de passe
+  devise:
+    sessions: 
+      new:
+        title: Se connecter
+        submit: Se connecter
+    registrations:
+      new:
+        title: "S'inscrire"
+        submit: Créer un compte
+      edit:
+        title: Editer votre profil
+        blank_to_keep: laisser vide pour ne pas le modifier
+        current_password_required: nécessaire pour modifier votre mot de passe 
+        submit: Modifier le compte
+        cancel: annuler
+      destroy:
+        title: Fermer mon compte
+        confirm: "Etes vous vraiment sûr de supprimer définitivement votre compte ?" 
+        text: "Attention, cette suppression est définitive :"
+        link: supprimer mon compte
+    passwords:
+      new:
+        title: Mot de passe oublié
+        submit: Envoyer les instructions pour un nouveau mot de passe
+      edit:
+        title: Changer de mot de passe
+        new_password: Nouveau mot de passe
+        new_password_confirmation: Confirmation du nouveau mot de passe
+        submit: Changer de mot de passe
+    confirmations:
+      new:
+        title: Recevoir les instructions de confirmation
+        submit: Recevoir les instructions de confirmation
+    unlocks:
+      new:
+        title: Recevoir les instructions de déblocage
+        submit: Recevoir les instructions de déblocage
+    links:
+      sign_in: "Se connecter"
+      sign_up: "S'inscrire"
+      new_password: Mot de passe oublié
+      new_confirmation: "Relancer une confirmation"
+      new_unlock: "Débloquer mon compte"
+  helpers:
+    label:
+      user:
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        current_password: Mot de passe actuel
+        remember_me: Se souvenir de moi
+
+en:
+  activerecord:
+    attributes:
+      user:
+        password: Password
+  devise:
+    sessions: 
+      new:
+        title: Sign In
+        submit: Sign In
+    registrations:
+      new:
+        title: Sign Up
+        submit: Create your account
+      edit:
+        title: Edit your account
+        blank_to_keep: "leave blank if you don't want to change it"
+        current_password_required: we need your current password to confirm your changes
+        submit: Modify your account
+    passwords:
+      new:
+        title: Remember your password
+        submit: Send me instructions for a new password
+      edit:
+        title: Change your password
+        new_password: New password
+        new_password_confirmation: Password confirmation
+        submit: Change password
+    confirmations:
+      new:
+        title: Resend confirmation instructions
+        submit: Resend confirmation instructions
+    unlocks:
+      new:
+        title: Resend unlock instructions
+        submit: Resend unlock instructions
+    links:
+      sign_in: "Sign In"
+      sign_up: "Sign Up"
+      new_password: Forgot your password ?
+      new_confirmation: "Didn't receive confirmation instructions?"
+      new_unlock: "Didn't receive unlock instructions?"
+  helpers:
+    label:
+      user:
+        password: Password
+        password_confirmation: Password confirmation
+        current_password: Current password
+        remember_me: Remember me
+                    

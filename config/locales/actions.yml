@@ -1,0 +1,16 @@
+en:
+  actions:
+    listen: Listen
+    show: Show
+    edit: Edit
+    destroy: Destroy
+  destroy:
+    confirm: "Do you want to destroy this element ?"
+fr:
+  actions:
+    listen: Ecouter
+    show: Voir
+    edit: Modifier
+    destroy: Supprimer
+  destroy:
+    confirm: "Est-ce vous sûr de supprimer cet élément ?"

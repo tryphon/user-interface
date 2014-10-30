@@ -1,0 +1,20 @@
+fr:
+  flash:
+    actions:
+      create:
+        notice: 'Le/la %{resource_name} est maintenant créé(e).'
+      update:
+        notice: 'Le/la %{resource_name} a été modifié(e).'
+      destroy:
+        notice: 'Le/la %{resource_name} a été supprimé(e).'
+        alert: "Le/la %{resource_name} n'a pû être détruit(e)."
+en:
+  flash:
+    actions:
+      create:
+        notice: '%{resource_name} was successfully created.'
+      update:
+        notice: '%{resource_name} was successfully updated.'
+      destroy:
+        notice: '%{resource_name} was successfully destroyed.'
+        alert: '%{resource_name} could not be destroyed.'

@@ -1,0 +1,20 @@
+en:
+  layouts:
+    application:
+      dashboard: Dashboard
+      help: Help
+      sign_in: Sign In
+      sign_out: Sign Out
+      my_profil: My Account
+      information: 
+        title: Information
+fr:
+  layouts:
+    application:
+      dashboard: Tableau de bord
+      help: Aide
+      sign_in: Se Connecter
+      sign_out: Se déconnecter
+      my_profil: Mon Compte
+      information: 
+        title: Information

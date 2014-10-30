@@ -1,3 +1,9 @@
-stylesheets/tryphon.css
+.bundle/
+log/*.log
+pkg/
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/*~
 *~
-spec/debug.log
+/.ruby-version
+/coverage

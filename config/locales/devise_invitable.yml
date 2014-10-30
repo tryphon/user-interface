@@ -1,0 +1,18 @@
+fr:
+  devise:
+    invitations:
+      send_instructions: 'Une invitation a été envoyée par email à %{email}.'
+      invitation_token_invalid: "Le code d'invitation fourni n'est pas valide."
+      updated: 'Votre mot de passe a été enregistré. Vous êtes maintenant connecté(e).'
+      edit:
+        title: Définir votre mot de passe
+        submit: Créer votre compte
+    mailer:
+      invitation_instructions:
+        subject: 'Invitation'
+en:
+  devise:
+    invitations:
+      edit:
+        title: Set your password
+        submit: Create your account

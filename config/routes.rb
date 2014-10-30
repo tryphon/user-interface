@@ -1,3 +1,3 @@
-ActionController::Routing::Routes.draw do |map|
-  map.resources :languages
+Rails.application.routes.draw do
+  resources :languages
 end
